@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Welcome to Wei-Lin's Website</title>
+</head>
+<body>
+	<h1>Wei-Lin Wu's Homepage</h1>
+	<h3>Ph.D. in Computer Science at University of California Santa Cruz</h3>
+    	<p><em>Wir m&uuml;ssen wissen, wir werden wissen.</em> &nbsp (English translation: <em>We must know, we will know</em>.) &nbsp This is a quote from the great mathematician David Hilbert.</p>
+		<img src="me.jpg" width="15%" height="15%">
+		<p>I'm from <a href="https://en.wikipedia.org/wiki/Tainan">Tainan, Taiwan</a> (a city where <a href="https://en.wikipedia.org/wiki/Jensen_Huang">Jensen Huang</a> and <a href="https://en.wikipedia.org/wiki/Lisa_Su">Lisa Su</a> were born). Here's my <a href="CV.pdf">CV</a> for your reference. I'm very fortunate to have Professor <a href="https://users.soe.ucsc.edu/~kolaitis/">Phokion G. Kolaitis</a> as my advisor.</p>
+	<p style="clear: both;"></p>
+	<hr>
+	<h2>Programming</h2>
+		<ul>
+			<li>C. It is the first programming language that I've learned in depth, and I like to see how things are going on under the hood via pointers and memory management. One of my favorite books on C programming is <a href="https://www.pearson.com/en-us/subject-catalog/p/c-a-reference-manual/P200000003310/9780130895929">C: A Reference Manual, 5th edition</a> by G. L. Steele and S. P. Harbison. (I also used Objective-C, a related language, while working as an iOS app developer years ago.)</li>
+			<li>Python. It is very popular and is flexible in its syntax, and I mainly use it to experiment ideas.</li>
+			<li>Haskell. It belongs to the purely functional paradigm and is one of my favorite languages, and I believe it should be a top choice for mathematicians who want to learn programming because of its math-like syntax (and semantics).</li>
+			<li>Prolog. I learned this logic programming language (as the name suggests) while serving as a TA for CSE 112 Comparative Programming Languages back in 2019, and I'm sure logicians would definitely love it.</li>
+		</ul>
+		<p>Besides these, I use LaTeX on a daily basis for typesetting research documents, and Bash script and AppleScript (as well as Automator) occasionally for automating things. Yes, I'm a Mac user.</p>
+	<h2>Research</h2>
+		<p>I'm generally interested in theoretical computer science including algorithm design, theory of formal languages, computability theory, computational complexity, graph theory and database theory. I have particular attention to the following fields:
+			<ul>
+				<li>Graph Homomorphisms,</li>
+				<li>Finite Model Theory.</li>
+			</ul>
+			My research results mainly involve combinatorial techniques. Check out <a href="https://youtu.be/aTbd8iEx-B0?si=JID2LXhvMm5rJRbS">this video</a> for a brief explanation of my study.
+		</p>
+		<p>Many years ago, I taught myself mathematical logic using the excellent textbook <a href="https://link.springer.com/book/10.1007/978-1-4757-2355-7">Mathematical Logic, 2nd edition</a> by H.-D. Ebbinghaus, J. Flum and W. Thomas. The specific results that brought me to this area are the famous <em>G&ouml;del's Incompleteness Theorems</em>, which assert that any axiomatization of first-order arithemtics (involving &#43, &#215, 0, 1) that is consistent, decidable and allows every computable function &#402 over the set <b>N</b> of natural numbers to be represented by a first-order formula <i>&#948</i><sub>&#402</sub> must be incomplete (first incompleteness), i.e., there is a statement true of <b>N</b> yet unprovable in that axiomatization, and that the consistency of such an axiomatization - when formalized as a first-order sentence - is an instance of such a statement if the axiomatization subsumes first-order Peano arithmetics (second incompleteness). The first incompleteness is closely related to the undecidable <em>Halting Problem</em>. In fact, (theoretical) computer science grew out of mathematical logic as a spin-off in a quest for a solution to the <i>foundational crisis</i> of mathematics.
+		</p>
+		<p>In recent years, I have developed interests in finite model theory, a field in the research of logic in computer science where the themes include
+			<ul>
+				<li>0-1 law of logics,</li>
+				<li>definability of classes of finite structures (such as graphs or relational databases) in certain logics, and</li>
+				<li>identification of complexity classes with logics (a subfield known as <i>descriptive complexity</i>).</li>
+			</ul>
+I study finite model theory in connection to the <em>expressive power of homomorphism counts</em>. It is known that a relational structure can be characterized up to isomorphism by homomorphism counts. More precisely, given two relational structures <i>A</i> and <i>B</i>, they are isomorphic if and only if hom(<i>C</i>, <i>A</i>) = hom(<i>C</i>, <i>B</i>) for every relational structure <i>C</i>, where hom(<i>C</i>, <i>A</i>) denotes the number of homomorphisms from <i>C</i> to <i>A</i> (likewise for hom(<i>C</i>, <i>B</i>)). This result is known as <em>Lov&aacutesz's Theorem</em> (by L. Lov&aacutesz). A parallel result, due to S. Chaudhuri and M. Y. Vardi, says that <i>A</i> and <i>B</i> are isomorphic if and only if hom(<i>A</i>, <i>C</i>) = hom(<i>B</i>, <i>C</i>) for every relational structure <i>C</i>. These results have motivated the following topics:
+	    	<ul>
+				<li>Given an equivalence relation among graphs (viewed as relational structures) that is coarser than isomorphism, what class <b>F</b> captures this equivalence relation in the sense that two graphs <i>A</i> and <i>B</i> are equivalent if and only if hom(<i>C</i>, <i>A</i>) = hom(<i>C</i>, <i>B</i>) for every graph <i>C</i> in <b>F</b>? See, e.g., [2] in the References below for a discussion in this vein. A dual question is: for what class <b>F</b> is it true that two graphs <i>A</i> and <i>B</i> are equivalent if and only if hom(<i>A</i>, <i>C</i>) = hom(<i>B</i>, <i>C</i>) for every graph <i>C</i> in <b>F</b>?</li>
+				<li>Given a class <b>C</b> of graphs, are there a positive integer <i>k</i>, graphs <i>F</i><sub>1</sub>,..., <i>F</i><sub><i>k</i></sub> and a set <b>X</b> of <i>k</i>-tuples of natural numbers - all of which are fixed and depend on <b>C</b> only - such that for every graph <i>A</i>, it is in <b>C</b> if and only if the <i>k</i>-tuple (hom(<i>F</i><sub>1</sub>, <i>A</i>),..., hom(<i>F</i><sub><i>k</i></sub>, <i>A</i>)) is in <b>X</b>? Likewise, a dual question can be asked with (hom(<i>A</i>, <i>F</i><sub>1</sub>),..., hom(<i>A</i>, <i>F</i><sub><i>k</i></sub>)) in place of (hom(<i>F</i><sub>1</sub>, <i>A</i>),..., hom(<i>F</i><sub><i>k</i></sub>, <i>A</i>)). See [1] in the References below for an in-depth treatment.</li>
+			</ul>
+I'm active in the research of these topics, see the following publications section for more details. As for a reference textbook I highly recommend <a href="https://academic.oup.com/book/2261">Graphs and Homomorphisms</a> by P. Hell and J. Ne&#353et&#345il.
+		<h3>References</h3>
+			<p>
+		[1] Yijia Chen, J&oumlrg Flum, Mingjun Liu, and Zhiyang Xun. On algorithms based on finitely many homomorphism counts. In <i>47th International Symposium on Mathematical Foundations of Computer Science (MFCS 2022)</i>. Schloss Dagstuhl-Leibniz-Zentrum f&uumlr Informatik, 2022.
+			</p>	
+			<p>
+		[2] Holger Dell, Martin Grohe, and Gaurav Rattan. Lov&aacutesz meets Weisfeiler and Leman. In Ioannis Chatzigiannakis, Christos Kaklamanis, D&aacuteniel Marx, and Donald Sannella, editors, <i>45th International Colloquium on Automata, Languages, and Programming, ICALP 2018, July 9-13, 2018, Prague, Czech Republic</i>, volume 107 of <i>LIPIcs</i>, pages 40:1-40:14. Schloss Dagstuhl-Leibniz-Zentrum f&uumlr Informatik, 2018.
+			</p>
+	<h2>Publications</h2>
+		<ul>
+			<li>B. ten Cate, V. Dalmau, Ph. G. Kolaitis, and W.-L. Wu. <a href="https://arxiv.org/abs/2304.06294#:~:text=A%20query%20algorithm%20based%20on,and%20finitely%20many%20predetermined%20instances.">When do homomorphism counts help in query algorithms?</a> (to appear in ICDT 2024) In arXiv:2304.06294.</li>
+			<li>W.-L. Wu. <a href="https://www.cst.cam.ac.uk/files/book-of-abstracts.pdf">Query Algorithms Based on Homomorphism Counts</a>. In <i>Structure Meets Power Workshop (Extended Abstract)</i>, pages 24-26, July 4, 2022.</li>
+			<li>A. Atserias, Ph. G. Kolaitis, and W.-L. Wu. <a href="https://ieeexplore.ieee.org/abstract/document/9470543/authors#authors">On the Expressive Power of Homomorphism Counts</a>. In <i>36th Annual ACM/IEEE Symposium on Logic in Computer Science, LICS 2021</i>, Rome, Italy, June 29 - July 2, 2021, pages 1-13. IEEE, 2021.</li>
+		</ul>
+	<h2>Talks</h2>
+		<ul>
+			<li>Contributed Talk for <i>Structure Meets Power Workshop ICALP 2022</i>, Paris, France (participated virtually via Zoom): Query Algorithms Based on Homomorphism Counts, 2022.</li>
+			<li>Contributed Talk for <i>Finite and Algorithmic Model Theory Seminar 22051</i>, Schloss Dagstuhl, Germany (invited participant): On Capturing Some Equivalence Relations by Homomorphism Counts, 2022.</li>
+			<li>Invited Talk for <i>Logic in Computer Science Special Session of the 2024 ASL Annual Meeting</i>, Iowa State University, Iowa, USA: A Study of the Expressive Power of Homomorphism Counts, 2024</li>
+		</ul>
+	<h2>Teaching Experiences</h2>
+		I have served as a teaching assistant for the courses offered at UC Santa Cruz:
+		<ul>
+			<li>CMPS 130 Computational Models, Fall 2017</li>
+			<li>CMPS 102 Introduction to Analysis of Algorithms, Spring 2018</li>
+			<li>CMPS 130 Computational Models, Fall 2018</li>
+			<li>CMPS 5J Introduction to Programming in Java, Winter 2019</li>
+			<li>CMPS 130 Computational Models, Spring 2019</li>
+			<li>CSE 112 Comparative Programming Languages, Fall 2019</li>
+			<li>CSE 103 Computational Models, Winter 2020</li>
+			<li>CSE 103 Computational Models, Fall 2020</li>
+			<li>CSE 103 Computational Models, Winter 2021</li>
+			<li>CSE 103 Computational Models, Fall 2021</li>
+			<li>CSE 30 Programming Abstractions: Python, Summer 2022</li>
+			<li>CSE 103 Computational Models, Fall 2022</li>
+		</ul>
+	<h2>Past Education</h2>
+		<ul>
+			<li>B.S., Electrical Engineering, National Cheng Kung University, Taiwan, 2007</li>
+			<li>M.S., Computer Science and Information Engineering, National Taiwan University, Taiwan, 2009</li>
+		</ul>
+	<h2>Hobbies</h2>
+	    Hiking, biking, swimming, photography, language learning (human languages or programming languages), linguistics, etymology.
+</body>
+</html>
